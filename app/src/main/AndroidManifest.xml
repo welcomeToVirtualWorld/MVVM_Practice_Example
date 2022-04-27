@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mvvm_practice_example">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".eleventhvideo.GridViewExampleWithLiveData"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tenthvideo.LoginExampleWithRetrofit"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".tenthvideo.LiveDataWithDataBinding"
+            android:exported="true"></activity>
+        <activity
+            android:name=".NinthVideo.LiveDataExample"
+            android:exported="false" />
+        <activity
+            android:name=".seventhVideo.RetrofitExampleWithDataManager"
+            android:exported="true" />
+        <activity
+            android:name=".sixthVideo.DataManagerExample"
+            android:exported="true" />
+        <activity
+            android:name=".fourthVideo.BaseObservableExample"
+            android:exported="true" />
+        <activity
+            android:name=".secondVideo.ListViewExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".firstVideo.LoginExample"
+            android:exported="true" />
+        <activity
+            android:name=".thirdVideo.RecyclerViewExampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ListViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fifthVideo.ListViewWithImageExample"
+            android:exported="true" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

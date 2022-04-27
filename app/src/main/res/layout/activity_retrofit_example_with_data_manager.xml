@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="seventhmodel"
+            type="com.example.mvvm_practice_example.seventhVideo.viewmodel.SeventhViewModel" />
+        <variable
+            name="presenter"
+            type="com.example.mvvm_practice_example.seventhVideo.ClickListener" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".seventhVideo.RetrofitExampleWithDataManager">
+
+        <TextView
+            android:textSize="20sp"
+            android:text="Login"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:hint="Enter Username"
+            android:text="@={seventhmodel.username}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtuserpass"
+            android:hint="Enter password"
+            android:text="@={seventhmodel.userpass}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:background="@color/colorAccent"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:onClick="@{(V)->presenter.onButtonClick()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:visibility="@{seventhmodel.progressBar}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
